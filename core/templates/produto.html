@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Produto</h1>
+    <table style="width: 600px; border: 1px solid; border-collapse: collapse;">
+        <thead style="background-color: black; color: white; text-align: center;">
+            <tr>
+                <td>Codigo</td>
+                <td>Nome</td>
+                <td>Preço</td>
+                <td>Qtd</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border: 1px solid;">
+                <td style="border: 1px solid;">{{ produto.id }}</td>
+                <td style="border: 1px solid;">{{ produto.nome }}</td>
+                <td style="border: 1px solid; text-align: right;">{{ produto.preco }}</td>
+                <td style="border: 1px solid; text-align: right;">{{ produto.estoque }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
+    <a href="{% url 'index' %}">Home</a>
+</body>
+</html>
